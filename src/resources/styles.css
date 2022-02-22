@@ -1,0 +1,45 @@
+.featured_container{
+
+
+
+    background: #fbf3ec;
+}
+body{
+
+    background: #fbf3ec;
+}
+
+.pushLeftIcons{
+    transform: translateY(-5px) !important;
+}
+
+
+
+
+.pushRightIcons{
+    transform: translateY(10px) !important;
+}
+.bRight{
+
+    top: 200px;
+    right:480px
+}
+.bLeft{
+ top: 150px;
+    right:380px
+}
+
+.tLeft{
+
+    top: 200px;right:230px
+}
+
+
+.icon{
+
+    position: absolute;
+transition: all 5s ease-out;
+}
+.icon:hover{
+    animation: alternate infinite .5s float;
+}
