@@ -11,7 +11,7 @@ export const customAos = (animation,element,x=100) => {
 
 
 
-
+///kgkg
 
 
 }
