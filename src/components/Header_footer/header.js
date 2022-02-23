@@ -5,11 +5,20 @@ import MenuIcon from '@material-ui/icons/Menu';
 const Header = () =>{
     const [headerShow, setHeaderShow]=useState(false);
 
-
+    const handleScroll = ()=> {
+        if (window.scrollY > 0) {
+            setHeaderShow(true)
+        } else {
+            setHeaderShow(false)
+        }
+    }
+    useEffect(()=>{
+        window.addEventListener('scroll',handleScroll)
+    },[]);
     return(
         <AppBar position="fixed" style={{
             backgroundColor:headerShow ? '#fbf3ec': 'transparent',
-            boxShadow:"none",
+            boxShadow:headerShow ?'0 8px 8px -4px #565657':"none",
             padding:'10px 0px'
         }}>
 

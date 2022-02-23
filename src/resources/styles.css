@@ -1,45 +1,487 @@
-.featured_container{
 
-
-
-    background: #fbf3ec;
-}
 body{
+    font-family: "Roboto",sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+.image img{
 
+    width: 100%;
+}
+
+.bshape {
+    top: 50px;
+    right:170px;
+    z-index: -1;
+}
+.container{
+    position: relative;
+    margin: 0;
     background: #fbf3ec;
+padding-bottom:20px ;
+    z-index: -1;
+
 }
 
 .pushLeftIcons{
-    transform: translateY(-5px) !important;
+    transform: translateY(-10px) !important;
 }
 
+.featured_container{
+    display: flex;
+    padding-top: 200px;
 
-
+}
+.illustration-holder{
+    width: 50%;
+height: 600px;
+    position: relative;
+}
 
 .pushRightIcons{
     transform: translateY(10px) !important;
 }
 .bRight{
 
-    top: 200px;
-    right:480px
+    top: 50px;
+    right:560px;    transition: all 5s ease-out;
+
 }
 .bLeft{
- top: 150px;
-    right:380px
+ top: 10px;
+    right:450px;
+    transition: all 5s ease-out;
+
 }
 
 .tLeft{
 
-    top: 200px;right:230px
+    top: 50px;right:300px;
+    transition: all 5s ease-out;
+
 }
 
 
 .icon{
 
     position: absolute;
-transition: all 5s ease-out;
 }
 .icon:hover{
     animation: alternate infinite .5s float;
+}
+
+.TTop{
+
+    top:0px;
+    left:300px
+
+}
+.TTopRight{
+    top:0px;
+    right:550px
+
+}
+
+.text-wrapper h1  {
+font-size: 85px;
+font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+.text-wrapper{
+    position: relative;
+
+    width: 50%;
+    height: auto;
+padding-left: 200px;
+
+    padding-right: 200px;
+
+}
+.text-wrapper h1 span:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 25px;
+    background: rgba(241,193,83,.4);
+    z-index: -1;
+    bottom: 450px;
+
+}
+
+
+.text-wrapper p{
+    color: #565657;
+    font-size: 25px;
+}
+.sContainer{
+    position: relative;
+    display: flex;
+}
+.sContainer img{
+    margin-top: 200px;
+position: relative;
+
+
+}
+.shareContainer{
+    position: absolute;
+    margin-top: 200px;
+    height: 300px;
+    margin-bottom: 50px;
+    width: 75%;
+margin-left: 250px;
+    background-color: white;
+}
+.simage{
+    z-index: -1;
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .featured_container{
+overflow-x: hidden;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .illustration-holder{
+        width: 100%;
+        height: 400px;
+
+        padding-left: 50px;
+
+
+        padding-right: 50px;
+    }
+
+
+    .text-wrapper{
+        width: 90%;
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+    .text-wrapper p  {
+        font-size: 40px;
+    }
+    .text-wrapper h1  {
+        font-size: 60px;
+        padding-bottom:  25px;
+    }
+
+    .text-wrapper h1 span::before {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 25px;
+        background: rgba(241,193,83,.4);
+        z-index: -1;
+        bottom: 69%;
+    }
+
+
+    .bRight{
+
+        top: 100px;
+        right:300px;
+
+    }
+    .bLeft{
+        top: 7%;
+        right:250px;
+
+    }
+
+    .tLeft{
+
+        top: 100px;right:150px;
+
+    }
+    .tLeft img{
+
+        height: 50%    ;
+        width: 50%;
+
+    }
+
+
+    .bLeft img{
+
+        height: 50%    ;
+        width: 50%;
+
+    }
+.TTop img{
+    width: 0;
+    height: 0;
+}
+.TTopRight img{
+    width: 0;
+    height: 0;
+
+}
+    .bRight img{
+
+        height: 50%    ;
+        width: 50%;
+
+    }
+    .bshape img{
+        top: 250px;
+        height: 10%   ;
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+
+        padding-bottom: 0px;
+    }
+    .shareContainer{
+        position: absolute;
+        margin-top: 200px;
+        height: 300px;
+        margin-bottom: 50px;
+        width: 80%;
+
+        right: 25px;
+
+        background-color: white;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 820.5px) and (min-width: 600.5px)  {
+
+
+        .featured_container{
+            overflow-x: hidden;
+
+            flex-direction: column-reverse;
+width: 100%;
+        }
+        .illustration-holder{
+            width: 100%;
+            height: 400px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+
+
+            padding-right: 50px;
+        }
+
+
+        .text-wrapper{
+            width: 90%;
+            padding-left: 30px;
+            padding-right: 30px;
+
+        }
+    .text-wrapper p  {
+        font-size: 40px;
+    }
+        .text-wrapper h1  {
+            font-size: 60px;
+            padding-bottom:  25px;
+        }
+
+        .text-wrapper h1 span::before {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 25px;
+            background: rgba(241,193,83,.4);
+            z-index: -1;
+            bottom: 69%;
+        }
+
+
+        .bRight{
+
+            top: 100px;
+            right:500px;
+
+        }
+        .bLeft{
+            top: 7%;
+            right:400px;
+
+        }
+
+        .tLeft{
+
+            top: 100px;right:250px;
+
+        }
+        .tLeft img{
+
+            height: 50%    ;
+            width: 75%;
+
+        }
+
+
+        .bLeft img{
+
+            height: 50%    ;
+            width: 75%;
+
+        }
+
+        .bRight img{
+
+            height: 50%    ;
+            width: 75%;
+
+        }
+        .bshape img{
+            top: 250px;
+            height: 50%    ;
+            width: 100%;
+            padding: 20px;
+        }
+        .shareContainer{
+            position: absolute;
+            margin-top: 200px;
+            height: 300px;
+            margin-bottom: 50px;
+            width: 80%;
+
+            right: 25px;
+
+            background-color: white;
+        }
+
+
+
+}
+@media screen and (max-width: 1150px) and (min-width: 820.5px) {
+
+.featured_container{
+    overflow-x: hidden;
+
+}
+    .illustration-holder {
+
+        width: 40%;
+        height: 10px;
+
+    }
+
+    .bshape img{
+        top: 250px;
+        height: 400px    ;
+        width: 500px;
+    }
+    .text-wrapper{
+        position: relative;
+
+        width: 50%;
+        height: auto;
+
+        padding-left: 40px;
+        padding-right: 200px;
+
+    }
+    .text-wrapper h1  {
+        font-size: 60px;
+        font-weight: bold;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .text-wrapper h1 span:before {
+
+        bottom: 240px;
+
+    }
+    .bshape {
+
+        right:40px;
+
+    }
+    .bRight{
+
+        top: 100px;
+        right:330px;
+
+    }
+    .bLeft{
+        top: 30px;
+        right:220px;
+
+    }
+
+    .tLeft{
+
+        top: 100px;right:110px;
+
+    }
+
+    .tLeft img{
+        height: 70px;
+        width: 130px;
+    }
+    .bLeft img{
+        height: 70px;
+        width: 130px;
+    }
+    .bRight img{
+        height: 70px;
+        width: 130px;
+    }
+}
+@media screen and (max-width: 1450px) and (min-width: 1150.5px) {
+    .featured_container{
+
+        overflow-x: hidden;
+
+
+    }
+
+
+
+    .text-wrapper{
+        position: relative;
+
+        width: 50%;
+        height: auto;
+
+padding-left: 40px;
+        padding-right: 200px;
+
+    }
+
+    .bshape {
+
+        right:40px;
+
+    }
+    .bRight{
+
+        top: 10%;
+        right:450px;
+
+    }
+    .bLeft{
+        top: 3%;
+        right:300px;
+
+    }
+
+    .tLeft{
+
+        top: 10%;right:150px;
+
+    }
+
 }
